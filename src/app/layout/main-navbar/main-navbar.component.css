@@ -1,0 +1,21 @@
+#navbar {
+    background-color: #292929;
+    padding-bottom: 0px;
+    height: 85px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.menu-item-active {
+    opacity: 1.5 !important;
+    border-bottom: solid 5px #5ec777;
+
+}
+
+.menu-item-inactive {
+    opacity: 0.5;
+}
+
+

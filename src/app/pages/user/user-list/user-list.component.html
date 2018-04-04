@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div id="content">
+    <div id="title" class="row navbar title-section ">
+      <div class="title-user col-md-6">
+        <div class="titles-header">
+          <p class="header-title">User list</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ng-busy-position">
+      <div class="table-rectangle">
+        <table class="table table-responsive table-custom">
+          <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr scope="row" *ngFor="let user of usersList">
+              <td>{{user.name.first}}</td>
+              <td>{{user.name.last}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.phone}}</td>
+              <td class="user-details" (click)="userDetails(user)">User Details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
